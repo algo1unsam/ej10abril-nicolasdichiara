@@ -10,7 +10,7 @@ object macaria {
 	}
 	
 	method capacidadDeSusto(){
-		return nivelIra + disfraces.sum(disfraces.nivelSusto())
+		return nivelIra + disfraces.sum{disfraz=>disfraz.nivelSusto()}
 	}
 	
 	method dejarDisfraz(disfraz){

@@ -4,11 +4,6 @@ object trajeDeBruja {
 	}
 } 
 
-/*
- * La barba asusta 5 veces su longitud. La longitud de la barba puede variar, con el tiempo va perdiendo pelos y se acorta o la mamá de uno de 
- * los chicos le agrega pelos para que dure más.
- */
-
 object barba {
 	var longitud
 	
@@ -31,14 +26,33 @@ object barba {
 
 object mascaraDracula {
 	var tamanio = 2
-
+	
+	method nivelSusto(){
+		return tamanio * 3
+	}
 
 }
 
 object mascaraFrankenstein {
 	
+	var tamanio = 22
+	
+	method nivelSusto(){
+		return tamanio * 3
+	}
 }
 
 object mascaraPolitico {
+	
+	var promesas=0
+	
+	method nivelSusto(){
+		return promesas
 	}
+	
+	method hacerPromesa(){
+		promesas=promesas+1
+	}
+	
+}
 
